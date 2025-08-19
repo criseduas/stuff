@@ -1,0 +1,877 @@
+{
+    "series": [
+        {
+            "nombre": "La esclava Isaura",
+            "genero": "Drama",
+            "anio": 2004,
+            "reparto": [
+                "Bianca Rinaldi",
+                "Leopoldo Pacheco",
+                "Theo Becker",
+                "Mayara Magri",
+                "Jackson Antunes",
+                "Patrícia França",
+                "Deo Garcez",
+                "Maria Ribeiro",
+                "Paulo Figueiredo",
+                "Miriam Mehler",
+                "Ewerton de Castro",
+                "Jonas Mello",
+                "Fernanda Nobre",
+                "Lugui Palhares",
+                "Gabriel Gracindo",
+                "Paula Lobo Antunes",
+                "André Fusko",
+                "Sylvia Bandeira",
+                "Caio Junqueira",
+                "Renata Dominguez"
+            ],
+            "pais_origen": "Brasil, RecordTV",
+            "cantidad_episodios": 167,
+            "sinopsis": "Isaura nació en 1835, en la hacienda del Comendador Almeida, de un romance entre la esclava Juliana con el administrador de la hacienda, Miguel. Juliana se muere poco tiempo después del parto, pues siempre se había negado a irse a la cama con el comendador, que por venganza castigaba la esclava en el tronco provocando su muerte. Isaura, entonces, es criada y educada por Gertrudes, mujer del Comendador, que siempre quiso tener una hija. Con una excelente educación y por tener la piel clara, Isaura, por haber sido hija de esclava, siempre será vista como una.",
+            "enlaces": [
+                {
+                    "idioma": "Español Latino",
+                    "enlace": "https://ia800804.us.archive.org/34/items/serbraua/la-esclava-isaura.m4a"
+                }
+            ],
+            "capitulos": [
+                {
+                    "inicio": 0,
+                    "fin": 3272782,
+                    "titulo": "Capítulo 1: Impunidad e injusticia"
+                },
+                {
+                    "inicio": 3272782,
+                    "fin": 5904926,
+                    "titulo": "Capítulo 2: El regreso del hijo pródigo"
+                },
+                {
+                    "inicio": 5904926,
+                    "fin": 8168477,
+                    "titulo": "Capítulo 3: Asesino"
+                },
+                {
+                    "inicio": 8168477,
+                    "fin": 10406880,
+                    "titulo": "Capítulo 4: Planes de escape"
+                },
+                {
+                    "inicio": 10406880,
+                    "fin": 12531086,
+                    "titulo": "Capítulo 5: Un precio más alto"
+                },
+                {
+                    "inicio": 12531086,
+                    "fin": 14669156,
+                    "titulo": "Capítulo 6: La propuesta"
+                },
+                {
+                    "inicio": 14669156,
+                    "fin": 16790925,
+                    "titulo": "Capítulo 7: Madre enferma"
+                },
+                {
+                    "inicio": 16790925,
+                    "fin": 19094413,
+                    "titulo": "Capítulo 8: El desprecio"
+                },
+                {
+                    "inicio": 19094413,
+                    "fin": 21172458,
+                    "titulo": "Capítulo 9: Juramento"
+                },
+                {
+                    "inicio": 21172458,
+                    "fin": 23329917,
+                    "titulo": "Capítulo 10: El anillo"
+                },
+                {
+                    "inicio": 23329917,
+                    "fin": 25548073,
+                    "titulo": "Capítulo 11: Asesino de su madre"
+                },
+                {
+                    "inicio": 25548073,
+                    "fin": 27767992,
+                    "titulo": "Capítulo 12: Muerte angustiosa"
+                },
+                {
+                    "inicio": 27767992,
+                    "fin": 30056828,
+                    "titulo": "Capítulo 13: El botín"
+                },
+                {
+                    "inicio": 30056828,
+                    "fin": 32159905,
+                    "titulo": "Capítulo 14: El funeral"
+                },
+                {
+                    "inicio": 32159905,
+                    "fin": 34580771,
+                    "titulo": "Capítulo 15: Atrocidades"
+                },
+                {
+                    "inicio": 34580771,
+                    "fin": 36923082,
+                    "titulo": "Capítulo 16: Reencuentro"
+                },
+                {
+                    "inicio": 36923082,
+                    "fin": 39235464,
+                    "titulo": "Capítulo 17: Provocación"
+                },
+                {
+                    "inicio": 39235464,
+                    "fin": 41525020,
+                    "titulo": "Capítulo 18: Planificar la huida"
+                },
+                {
+                    "inicio": 41525020,
+                    "fin": 43843207,
+                    "titulo": "Capítulo 19: La fuga"
+                },
+                {
+                    "inicio": 43843207,
+                    "fin": 46236673,
+                    "titulo": "Capítulo 20: El presagio se cumple"
+                },
+                {
+                    "inicio": 46236673,
+                    "fin": 48691881,
+                    "titulo": "Capítulo 21: Promesa de venganza"
+                },
+                {
+                    "inicio": 48691881,
+                    "fin": 50937505,
+                    "titulo": "Capítulo 22: Deseo carnal"
+                },
+                {
+                    "inicio": 50937505,
+                    "fin": 53347897,
+                    "titulo": "Capítulo 23: Pulmones dañados"
+                },
+                {
+                    "inicio": 53347897,
+                    "fin": 55757083,
+                    "titulo": "Capítulo 24: Extorsión por lascivia"
+                },
+                {
+                    "inicio": 55757083,
+                    "fin": 58358670,
+                    "titulo": "Capítulo 25: Cortejo"
+                },
+                {
+                    "inicio": 58358670,
+                    "fin": 60813761,
+                    "titulo": "Capítulo 26: Odio latente"
+                },
+                {
+                    "inicio": 60813761,
+                    "fin": 63364379,
+                    "titulo": "Capítulo 27: Plan incendiario"
+                },
+                {
+                    "inicio": 63364379,
+                    "fin": 65923636,
+                    "titulo": "Capítulo 28: Asesinato despiadado"
+                },
+                {
+                    "inicio": 65923636,
+                    "fin": 68523109,
+                    "titulo": "Capítulo 29: Una idea liberadora"
+                },
+                {
+                    "inicio": 68523109,
+                    "fin": 71055175,
+                    "titulo": "Capítulo 30: Fragmentos del pasado"
+                },
+                {
+                    "inicio": 71055175,
+                    "fin": 73593278,
+                    "titulo": "Capítulo 31: Indagando la infidelidad"
+                },
+                {
+                    "inicio": 73593278,
+                    "fin": 76208100,
+                    "titulo": "Capítulo 32: Insurrecta y castigada"
+                },
+                {
+                    "inicio": 76208100,
+                    "fin": 78792365,
+                    "titulo": "Capítulo 33: Súplica de rodillas"
+                },
+                {
+                    "inicio": 78792365,
+                    "fin": 81310523,
+                    "titulo": "Capítulo 34: Hija reconocida"
+                },
+                {
+                    "inicio": 81310523,
+                    "fin": 83918146,
+                    "titulo": "Capítulo 35: El ultimátum marital"
+                },
+                {
+                    "inicio": 83918146,
+                    "fin": 86478355,
+                    "titulo": "Capítulo 36: Testamento hurtado"
+                },
+                {
+                    "inicio": 86478355,
+                    "fin": 89000807,
+                    "titulo": "Capítulo 37: Aferrado a la esclava"
+                },
+                {
+                    "inicio": 89000807,
+                    "fin": 91599304,
+                    "titulo": "Capítulo 38: Insinuaciones"
+                },
+                {
+                    "inicio": 91599304,
+                    "fin": 94147183,
+                    "titulo": "Capítulo 39: Reencuentro cariñoso"
+                },
+                {
+                    "inicio": 94147183,
+                    "fin": 96657492,
+                    "titulo": "Capítulo 40: Nada por hacer"
+                },
+                {
+                    "inicio": 96657492,
+                    "fin": 99183729,
+                    "titulo": "Capítulo 41: La muerte del patriarca"
+                },
+                {
+                    "inicio": 99183729,
+                    "fin": 101722807,
+                    "titulo": "Capítulo 42: Funeral incómodo"
+                },
+                {
+                    "inicio": 101722807,
+                    "fin": 104279741,
+                    "titulo": "Capítulo 43: Regresa el acoso"
+                },
+                {
+                    "inicio": 104279741,
+                    "fin": 106790629,
+                    "titulo": "Capítulo 44: Intimidad por venganza"
+                },
+                {
+                    "inicio": 106790629,
+                    "fin": 109279458,
+                    "titulo": "Capítulo 45: Una nueva paternidad"
+                },
+                {
+                    "inicio": 109279458,
+                    "fin": 111865184,
+                    "titulo": "Capítulo 46: Trabajos forzados"
+                },
+                {
+                    "inicio": 111865184,
+                    "fin": 114468466,
+                    "titulo": "Capítulo 47: Convicción en pie"
+                },
+                {
+                    "inicio": 114468466,
+                    "fin": 116911483,
+                    "titulo": "Capítulo 48: Azotes interrumpidos"
+                },
+                {
+                    "inicio": 116911483,
+                    "fin": 119418564,
+                    "titulo": "Capítulo 49: Escape fortuito"
+                },
+                {
+                    "inicio": 119418564,
+                    "fin": 121964283,
+                    "titulo": "Capítulo 50: El hallazgo"
+                },
+                {
+                    "inicio": 121964283,
+                    "fin": 124523585,
+                    "titulo": "Capítulo 51: Aferrado a la esclava"
+                },
+                {
+                    "inicio": 124523585,
+                    "fin": 127018777,
+                    "titulo": "Capítulo 52: Un trato ventajoso"
+                },
+                {
+                    "inicio": 127018777,
+                    "fin": 129505703,
+                    "titulo": "Capítulo 53: Dispuestos a luchar"
+                },
+                {
+                    "inicio": 129505703,
+                    "fin": 131951784,
+                    "titulo": "Capítulo 54: Rumbo a la libertad"
+                },
+                {
+                    "inicio": 131951784,
+                    "fin": 134517356,
+                    "titulo": "Capítulo 55: Dudas del paradero"
+                },
+                {
+                    "inicio": 134517356,
+                    "fin": 137065745,
+                    "titulo": "Capítulo 56: Delirios"
+                },
+                {
+                    "inicio": 137065745,
+                    "fin": 139520744,
+                    "titulo": "Capítulo 57: La culpa"
+                },
+                {
+                    "inicio": 139520744,
+                    "fin": 142071339,
+                    "titulo": "Capítulo 58: Amor a primera vista"
+                },
+                {
+                    "inicio": 142071339,
+                    "fin": 144652305,
+                    "titulo": "Capítulo 59: Una plática flechadora"
+                },
+                {
+                    "inicio": 144652305,
+                    "fin": 147231600,
+                    "titulo": "Capítulo 60: Ideas grandiosas"
+                },
+                {
+                    "inicio": 147231600,
+                    "fin": 149697930,
+                    "titulo": "Capítulo 61: Noche de navidad"
+                },
+                {
+                    "inicio": 149697930,
+                    "fin": 152182418,
+                    "titulo": "Capítulo 62: Enamorado de otra"
+                },
+                {
+                    "inicio": 152182418,
+                    "fin": 154692959,
+                    "titulo": "Capítulo 63: Cautiva"
+                },
+                {
+                    "inicio": 154692959,
+                    "fin": 157199181,
+                    "titulo": "Capítulo 64: Verdad amarga"
+                },
+                {
+                    "inicio": 157199181,
+                    "fin": 159711138,
+                    "titulo": "Capítulo 65: Sufrir en silencio"
+                },
+                {
+                    "inicio": 159711138,
+                    "fin": 162171617,
+                    "titulo": "Capítulo 66: Conociendo al enemigo"
+                },
+                {
+                    "inicio": 162171617,
+                    "fin": 164737352,
+                    "titulo": "Capítulo 67: Fraude"
+                },
+                {
+                    "inicio": 164737352,
+                    "fin": 167343141,
+                    "titulo": "Capítulo 68: La lección"
+                },
+                {
+                    "inicio": 167343141,
+                    "fin": 169843744,
+                    "titulo": "Capítulo 69: Coincidencias"
+                },
+                {
+                    "inicio": 169843744,
+                    "fin": 172392204,
+                    "titulo": "Capítulo 70: Fecha de la boda"
+                },
+                {
+                    "inicio": 172392204,
+                    "fin": 174890903,
+                    "titulo": "Capítulo 71: Encontrada"
+                },
+                {
+                    "inicio": 174890903,
+                    "fin": 177471685,
+                    "titulo": "Capítulo 72: Herida de muerte"
+                },
+                {
+                    "inicio": 177471685,
+                    "fin": 179984176,
+                    "titulo": "Capítulo 73: Esperanzas de vida"
+                },
+                {
+                    "inicio": 179984176,
+                    "fin": 182557759,
+                    "titulo": "Capítulo 74: Deudas"
+                },
+                {
+                    "inicio": 182557759,
+                    "fin": 185054274,
+                    "titulo": "Capítulo 75: Cazadores de esclavos"
+                },
+                {
+                    "inicio": 185054274,
+                    "fin": 187658391,
+                    "titulo": "Capítulo 76: Defendiendo a la esclava"
+                },
+                {
+                    "inicio": 187658391,
+                    "fin": 190198444,
+                    "titulo": "Capítulo 77: La verdad a la luz"
+                },
+                {
+                    "inicio": 190198444,
+                    "fin": 192724821,
+                    "titulo": "Capítulo 78: El verdadero asesino"
+                },
+                {
+                    "inicio": 192724821,
+                    "fin": 195292530,
+                    "titulo": "Capítulo 79: Bombones envenenados"
+                },
+                {
+                    "inicio": 195292530,
+                    "fin": 197825269,
+                    "titulo": "Capítulo 80: Contraoferta"
+                },
+                {
+                    "inicio": 197825269,
+                    "fin": 200441855,
+                    "titulo": "Capítulo 81: Mano concedida"
+                },
+                {
+                    "inicio": 200441855,
+                    "fin": 202962218,
+                    "titulo": "Capítulo 82: Viaje a Sao Paulo"
+                },
+                {
+                    "inicio": 202962218,
+                    "fin": 205502295,
+                    "titulo": "Capítulo 83: Corazón roto"
+                },
+                {
+                    "inicio": 205502295,
+                    "fin": 208020846,
+                    "titulo": "Capítulo 84: Una velada incómoda"
+                },
+                {
+                    "inicio": 208020846,
+                    "fin": 210619250,
+                    "titulo": "Capítulo 85: Galanteos extramaritales"
+                },
+                {
+                    "inicio": 210619250,
+                    "fin": 213137615,
+                    "titulo": "Capítulo 86: Fuetazo en el rostro"
+                },
+                {
+                    "inicio": 213137615,
+                    "fin": 215677854,
+                    "titulo": "Capítulo 87: Adiós libertad"
+                },
+                {
+                    "inicio": 215677854,
+                    "fin": 218177156,
+                    "titulo": "Capítulo 88: Esposada y devuelta"
+                },
+                {
+                    "inicio": 218177156,
+                    "fin": 220672928,
+                    "titulo": "Capítulo 89: Alianza estratégica"
+                },
+                {
+                    "inicio": 220672928,
+                    "fin": 223301194,
+                    "titulo": "Capítulo 90: Un beso a ciegas"
+                },
+                {
+                    "inicio": 223301194,
+                    "fin": 225815240,
+                    "titulo": "Capítulo 91: Ímpetu iracundo"
+                },
+                {
+                    "inicio": 225815240,
+                    "fin": 228245811,
+                    "titulo": "Capítulo 92: La Fiera de Macabú"
+                },
+                {
+                    "inicio": 228245811,
+                    "fin": 230789463,
+                    "titulo": "Capítulo 93: Diamantes"
+                },
+                {
+                    "inicio": 230789463,
+                    "fin": 233259345,
+                    "titulo": "Capítulo 94: Ultimátum de virginidad"
+                },
+                {
+                    "inicio": 233259345,
+                    "fin": 235893718,
+                    "titulo": "Capítulo 95: Haciendo negocio"
+                },
+                {
+                    "inicio": 235893718,
+                    "fin": 238436441,
+                    "titulo": "Capítulo 96: Violación interrunpida"
+                },
+                {
+                    "inicio": 238436441,
+                    "fin": 241140241,
+                    "titulo": "Capítulo 97: El mejor postor"
+                },
+                {
+                    "inicio": 241140241,
+                    "fin": 243730240,
+                    "titulo": "Capítulo 98: La subasta"
+                },
+                {
+                    "inicio": 243730240,
+                    "fin": 246241059,
+                    "titulo": "Capítulo 99: Un novio poco usual"
+                },
+                {
+                    "inicio": 246241059,
+                    "fin": 248708712,
+                    "titulo": "Capítulo 100: Triángulo amoroso"
+                },
+                {
+                    "inicio": 248708712,
+                    "fin": 251288308,
+                    "titulo": "Capítulo 101: La horca"
+                },
+                {
+                    "inicio": 251288308,
+                    "fin": 253789189,
+                    "titulo": "Capítulo 102: Una propuesta de corazón"
+                },
+                {
+                    "inicio": 253789189,
+                    "fin": 256278112,
+                    "titulo": "Capítulo 103: Sueños de pasión"
+                },
+                {
+                    "inicio": 256278112,
+                    "fin": 258766710,
+                    "titulo": "Capítulo 104: Un acuerdo perenne"
+                },
+                {
+                    "inicio": 258766710,
+                    "fin": 261190107,
+                    "titulo": "Capítulo 105: El plan B de la Condesa"
+                },
+                {
+                    "inicio": 261190107,
+                    "fin": 263636770,
+                    "titulo": "Capítulo 106: Boda aceptada"
+                },
+                {
+                    "inicio": 263636770,
+                    "fin": 266204246,
+                    "titulo": "Capítulo 107: Salud mermada"
+                },
+                {
+                    "inicio": 266204246,
+                    "fin": 268721497,
+                    "titulo": "Capítulo 108: Muertas de hambre"
+                },
+                {
+                    "inicio": 268721497,
+                    "fin": 271247804,
+                    "titulo": "Capítulo 109: Fiebre amarilla"
+                },
+                {
+                    "inicio": 271247804,
+                    "fin": 273733058,
+                    "titulo": "Capítulo 110: Violencia innecesaria"
+                },
+                {
+                    "inicio": 273733058,
+                    "fin": 276282608,
+                    "titulo": "Capítulo 111: Sin aire"
+                },
+                {
+                    "inicio": 276282608,
+                    "fin": 278810146,
+                    "titulo": "Capítulo 112: O él o yo"
+                },
+                {
+                    "inicio": 278810146,
+                    "fin": 281442661,
+                    "titulo": "Capítulo 113: Complicidad revelada"
+                },
+                {
+                    "inicio": 281442661,
+                    "fin": 283916003,
+                    "titulo": "Capítulo 114: Pasiones"
+                },
+                {
+                    "inicio": 283916003,
+                    "fin": 286458378,
+                    "titulo": "Capítulo 115: Aferrada a un capricho"
+                },
+                {
+                    "inicio": 286458378,
+                    "fin": 288894360,
+                    "titulo": "Capítulo 116: Instrucciones precisas"
+                },
+                {
+                    "inicio": 288894360,
+                    "fin": 291394567,
+                    "titulo": "Capítulo 117: Situación incómoda"
+                },
+                {
+                    "inicio": 291394567,
+                    "fin": 293946671,
+                    "titulo": "Capítulo 118: Contra la espada y la pared"
+                },
+                {
+                    "inicio": 293946671,
+                    "fin": 296516840,
+                    "titulo": "Capítulo 119: Escápate conmigo"
+                },
+                {
+                    "inicio": 296516840,
+                    "fin": 298983982,
+                    "titulo": "Capítulo 120: Ni pagando"
+                },
+                {
+                    "inicio": 298983982,
+                    "fin": 301493895,
+                    "titulo": "Capítulo 121: Refugiados en el bosque"
+                },
+                {
+                    "inicio": 301493895,
+                    "fin": 303975388,
+                    "titulo": "Capítulo 122: Una nueva premonición"
+                },
+                {
+                    "inicio": 303975388,
+                    "fin": 306468096,
+                    "titulo": "Capítulo 123: Amor real"
+                },
+                {
+                    "inicio": 306468096,
+                    "fin": 309022150,
+                    "titulo": "Capítulo 124: Escapando"
+                },
+                {
+                    "inicio": 309022150,
+                    "fin": 311567125,
+                    "titulo": "Capítulo 125: Asesinato cobarde"
+                },
+                {
+                    "inicio": 311567125,
+                    "fin": 314078269,
+                    "titulo": "Capítulo 126: Defensa propia"
+                },
+                {
+                    "inicio": 314078269,
+                    "fin": 316657495,
+                    "titulo": "Capítulo 127: A la fuerza"
+                },
+                {
+                    "inicio": 316657495,
+                    "fin": 319267604,
+                    "titulo": "Capítulo 128: Acorralada"
+                },
+                {
+                    "inicio": 319267604,
+                    "fin": 321800923,
+                    "titulo": "Capítulo 129: Consecuencias"
+                },
+                {
+                    "inicio": 321800923,
+                    "fin": 324382354,
+                    "titulo": "Capítulo 130: Tortura"
+                },
+                {
+                    "inicio": 324382354,
+                    "fin": 326851029,
+                    "titulo": "Capítulo 131: Descubriendo la verdad"
+                },
+                {
+                    "inicio": 326851029,
+                    "fin": 329509365,
+                    "titulo": "Capítulo 132: Arrestado"
+                },
+                {
+                    "inicio": 329509365,
+                    "fin": 332028892,
+                    "titulo": "Capítulo 133: Un trato"
+                },
+                {
+                    "inicio": 332028892,
+                    "fin": 334591492,
+                    "titulo": "Capítulo 134: Embarazada"
+                },
+                {
+                    "inicio": 334591492,
+                    "fin": 337181050,
+                    "titulo": "Capítulo 135: El nuevo dueño"
+                },
+                {
+                    "inicio": 337181050,
+                    "fin": 339604284,
+                    "titulo": "Capítulo 136: Perdiendolo todo"
+                },
+                {
+                    "inicio": 339604284,
+                    "fin": 342173060,
+                    "titulo": "Capítulo 137: Libre"
+                },
+                {
+                    "inicio": 342173060,
+                    "fin": 344648213,
+                    "titulo": "Capítulo 138: Macabros planes"
+                },
+                {
+                    "inicio": 344648213,
+                    "fin": 347097313,
+                    "titulo": "Capítulo 139: Sin remordimientos"
+                },
+                {
+                    "inicio": 347097313,
+                    "fin": 349574277,
+                    "titulo": "Capítulo 140: Al borde de la locura"
+                },
+                {
+                    "inicio": 349574277,
+                    "fin": 351954135,
+                    "titulo": "Capítulo 141: Robada por un crápula"
+                },
+                {
+                    "inicio": 351954135,
+                    "fin": 354441827,
+                    "titulo": "Capítulo 142: Propuestas indecorosas"
+                },
+                {
+                    "inicio": 354441827,
+                    "fin": 356924643,
+                    "titulo": "Capítulo 143: Detenido en el bosque"
+                },
+                {
+                    "inicio": 356924643,
+                    "fin": 359439990,
+                    "titulo": "Capítulo 144: Boda amorosa"
+                },
+                {
+                    "inicio": 359439990,
+                    "fin": 361917280,
+                    "titulo": "Capítulo 145: Libre soy"
+                },
+                {
+                    "inicio": 361917280,
+                    "fin": 364172981,
+                    "titulo": "Capítulo 146: Acosador incesante"
+                },
+                {
+                    "inicio": 364172981,
+                    "fin": 366630047,
+                    "titulo": "Capítulo 147: A merced de un sáfico"
+                },
+                {
+                    "inicio": 366630047,
+                    "fin": 369029852,
+                    "titulo": "Capítulo 148: Acto inconcluso"
+                },
+                {
+                    "inicio": 369029852,
+                    "fin": 371712684,
+                    "titulo": "Capítulo 149: El peso de la ley"
+                },
+                {
+                    "inicio": 371712684,
+                    "fin": 374311786,
+                    "titulo": "Capítulo 150: Un testimonio crucial"
+                },
+                {
+                    "inicio": 374311786,
+                    "fin": 376778371,
+                    "titulo": "Capítulo 151: ¿Quién es el asesino?"
+                },
+                {
+                    "inicio": 376778371,
+                    "fin": 379422078,
+                    "titulo": "Capítulo 152: El cuestionario"
+                },
+                {
+                    "inicio": 379422078,
+                    "fin": 382045305,
+                    "titulo": "Capítulo 153: Sospechosa común"
+                },
+                {
+                    "inicio": 382045305,
+                    "fin": 384632169,
+                    "titulo": "Capítulo 154: Besos y caricias"
+                },
+                {
+                    "inicio": 384632169,
+                    "fin": 387155644,
+                    "titulo": "Capítulo 155: Amor cougar"
+                },
+                {
+                    "inicio": 387155644,
+                    "fin": 389690797,
+                    "titulo": "Capítulo 156: Plática secreta"
+                },
+                {
+                    "inicio": 389690797,
+                    "fin": 392180950,
+                    "titulo": "Capítulo 157: El temor de una madre"
+                },
+                {
+                    "inicio": 392180950,
+                    "fin": 394628332,
+                    "titulo": "Capítulo 158: Sospechas"
+                },
+                {
+                    "inicio": 394628332,
+                    "fin": 396968508,
+                    "titulo": "Capítulo 159: Seducción diabólica"
+                },
+                {
+                    "inicio": 396968508,
+                    "fin": 399325983,
+                    "titulo": "Capítulo 160: Veneno"
+                },
+                {
+                    "inicio": 399325983,
+                    "fin": 401672428,
+                    "titulo": "Capítulo 161: Envenenada"
+                },
+                {
+                    "inicio": 401672428,
+                    "fin": 404035592,
+                    "titulo": "Capítulo 162: Defendiendo las tierras"
+                },
+                {
+                    "inicio": 404035592,
+                    "fin": 406411085,
+                    "titulo": "Capítulo 163: Apresados"
+                },
+                {
+                    "inicio": 406411085,
+                    "fin": 408986966,
+                    "titulo": "Capítulo 164: Arrestada"
+                },
+                {
+                    "inicio": 408986966,
+                    "fin": 411614303,
+                    "titulo": "Capítulo 165: Boda triple"
+                },
+                {
+                    "inicio": 411614303,
+                    "fin": 414230286,
+                    "titulo": "Capítulo 166: Escándalo en la boda"
+                },
+                {
+                    "inicio": 414230286,
+                    "fin": 416939846,
+                    "titulo": "Capítulo 167: El peso de las cosas"
+                }
+            ]
+        }
+    ]
+}
