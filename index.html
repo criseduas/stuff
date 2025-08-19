@@ -1,146 +1,828 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-    <title>Reproductor de Audio de Streams de Video</title>
-    <script type='text/javascript' src="//ssl.p.jwpcdn.com/player/v/8.25.0/jwplayer.js"></script>
-    <script type='text/javascript'>jwplayer.key='XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo'</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series</title>
     <style>
-        #controls {
-            margin-top: 10px;
+        /* Estilos CSS */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        :root {
+            --pc: #4CAF50;
+            --pcd: #3e8e41;
+            --tc: #333;
+            --bc: #f4f4f4;
+            --w: #fff;
+            --s: 0 0 5px rgba(0, 0, 0, .1);
+            --fo: 3px solid #007bff;
+            --foo: 2px
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bc);
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: var(--tc)
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: .5em
+        }
+
+        .c {
+            width: 95%;
+            margin: 10px auto;
+            background-color: var(--w);
+            padding: 15px;
+            box-shadow: var(--s)
+        }
+
+        .b {
+            padding: 12px 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color .2s ease, box-shadow .2s ease;
+            font-size: 1em;
+            background-color: var(--pc);
+            color: var(--w)
+        }
+
+        .b:hover,
+        .b:focus {
+            box-shadow: var(--s);
+            outline: none
+        }
+
+        .bp:hover,
+        .bp:focus {
+            background-color: var(--pcd)
+        }
+
+        .sl {
+            list-style-type: none;
+            padding: 0
+        }
+
+        .sl li {
+            margin-bottom: 10px
+        }
+
+        .sl button {
+            width: 100%;
+            text-align: left;
+            font-size: 1.1em;
+            display: block
+        }
+
+        .m {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, .7)
+        }
+
+        .mc {
+            background-color: var(--w);
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 90%;
+            position: relative;
+            border-radius: 10px;
+            padding-top: 60px;
+            padding-bottom: 70px
+        }
+
+        .fh {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--w);
+            padding: 10px 20px;
+            z-index: 2;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+            display: flex;
+            justify-content: flex-end
+        }
+
+        .fp {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            z-index: 2;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, .2);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap
+        }
+
+        .fp button {
+            background-color: #555;
+            color: var(--w);
+            transition: background-color .3s;
+            font-size: .9em;
+            padding: 8px 12px;
+            margin-bottom: 5px
+        }
+
+        .fp button:hover {
+            background-color: #777
+        }
+
+        .fp #ti,
+        .fp #ci {
+            font-size: .8em;
+            color: var(--tc);
+            width: 100%;
+            text-align: center
+        }
+
+        .lc,
+        .ec {
+            margin-top: 1em;
+            width: 100%
+        }
+
+        .lc label,
+        .ec label {
+            display: block;
+            margin-bottom: .5em;
+            font-size: 1.1em
+        }
+
+        .lc select,
+        .ec select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 1em;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 10px top 50%;
+            background-size: 1.5em
+        }
+
+        .h {
+            display: none !important
+        }
+
+        *:focus {
+            outline: var(--fo);
+            outline-offset: var(--foo)
+        }
+
+        @media (max-width:600px) {
+
+            body {
+                font-size: 1.1em
+            }
+
+            h2 {
+                font-size: 1.5em
+            }
+
+            .c {
+                padding: 10px
+            }
+
+            .sl button {
+                padding: 12px 15px;
+                font-size: 1em
+            }
+
+            .mc {
+                margin: 20% auto
+            }
+        }
+
+        #cw {
+            margin-bottom: 20px
+        }
+
+        #cw h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px
+        }
+
+        #cw ul {
+            list-style: none;
+            padding: 0
+        }
+
+        #cw li {
+            margin-bottom: 5px
+        }
+
+        #cw li button {
+            margin-right: 5px
+        }
+
+        .ts {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 1em;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 10px top 50%;
+            background-size: 1.5em
+        }
+
+        .tc {
+            margin-bottom: 1em
+        }
+
+        .tc label {
+            display: block;
+            margin-bottom: .5em;
+            font-size: 1.1em
+        }
+
+        /* Estilos adicionales para el encabezado */
+        #selector-series {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #selector-series h2 {
+            margin-bottom: 10px;
+        }
+
+        #selector-series ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #selector-series li {
+            margin: 0 10px;
+        }
+
+        #selector-series a {
+            text-decoration: none;
+            color: var(--pc);
+            font-weight: bold;
+            padding: 8px 12px;
+            border: 2px solid var(--pc);
+            border-radius: 5px;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            display: block;
+        }
+
+        #selector-series a:hover {
+            background-color: var(--pc);
+            color: var(--w);
         }
     </style>
 </head>
+
 <body>
-    <div>
-        <label for="categorySelector">Selecciona una categoría:</label>
-        <select id="categorySelector" onchange="updateChannelList()"></select>
+    <div class="c">
+        <!-- Encabezado con enlaces dinámicos -->
+        <div id="selector-series">
+            <h2>¿Qué quieres ver?</h2>
+            <ul>
+                <li><a href="#" id="en-espanol">Series en español original</a></li>
+                <li><a href="#" id="con-doblaje">Series con doblaje</a></li>
+            </ul>
+        </div>
+
+        <div id="mc">
+            <header>
+                <h2>Series de TV</h2>
+                <button id="gsi" class="b">Iniciar sesión con Google</button>
+                <button id="so" class="b h">Cerrar sesión</button>
+            </header>
+            <main>
+                <div id="cw">
+                    <h2>Continuar escuchando</h2>
+                    <ul id="cwl"></ul>
+                </div>
+                <div id="coc"></div>
+            </main>
+        </div>
     </div>
-    <div>
-        <label for="channelSelector">Selecciona un canal:</label>
-        <select id="channelSelector" onchange="cargarStream()"></select>
+
+    <div id="sM" class="m" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="mc" tabindex="-1">
+            <header class="fh">
+                <h2 id="modal-title">Detalles de la Serie</h2>
+                <button class="close b bp" id="cb" aria-label="Regresar">Regresar</button>
+            </header>
+            <main>
+                <div id="si" aria-live="polite"></div>
+                <section class="tc h" id="tasc">
+                    <label for="t">Temporada:</label>
+                    <select id="t" class="ts"></select>
+                </section>
+            </main>
+            <audio id="ap">Audio no soportado.</audio>
+            <h2>Reproductor</h2>
+            <footer class="fp">
+                <div id="ci"></div>
+                <div id="ti"></div>
+                <button id="ppb" class="b" aria-label="Reproducir/Pausar">Reproducir</button>
+                <button id="fb" class="b" aria-label="Avanzar 15 segundos">Avanzar</button>
+                <button id="bb" class="b" aria-label="Retroceder 15 segundos">Retroceder</button>
+                <button id="ncb" class="b" aria-label="Siguiente episodio">Siguiente episodio</button>
+                <button id="pcb" class="b" aria-label="Episodio anterior">Episodio anterior</button>
+                <button id="ivb" class="b" aria-label="Subir volumen">Subir volumen</button>
+                <button id="dvb" class="b" aria-label="Bajar volumen">Bajar volumen</button>
+                <section class="ec" id="easc">
+                    <label for="c">Capítulo:</label>
+                    <select id="c"></select>
+                </section>
+                <section class="lc h" id="lasc">
+                    <label for="l">Pista de audio:</label>
+                    <select id="l"></select>
+                </section>
+            </footer>
+        </div>
     </div>
-    <div id="player">CARGANDO...</div>
-    <div id="controls">
-        <button onclick="playPause()">Play/Pausa</button>
-        <button onclick="changeVolume(-5)">Bajar Volumen</button>
-        <button onclick="changeVolume(5)">Subir Volumen</button>
-        <button onclick="changeAudioTrack(-1)">Track Anterior</button>
-        <button onclick="changeAudioTrack(1)">Siguiente Track</button>
-    </div>
-    <script type='text/javascript'>
-        var playerInstance = null;
-        var canales = [];
-        var categorias = [];
 
-        fetch('https://criseduas.github.io/stuff/canales.json')
-            .then(response => response.json())
-            .then(data => {
-                canales = data;
-                categorias = obtenerCategoriasOrdenadas();
-                cargarCategorias();
-                updateChannelList();
-            })
-            .catch(error => console.error('Error al cargar el JSON:', error));
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
+        import { getFirestore, collection, doc, setDoc, getDoc, query, where, getDocs, serverTimestamp, deleteDoc } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore.js";
+        import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
 
-        function cargarCategorias() {
-            var selectBox = document.getElementById("categorySelector");
-            categorias.forEach(function(categoria) {
-                var option = document.createElement("option");
-                option.text = categoria;
-                selectBox.add(option);
-            });
-        }
+        const fC = { apiKey: "AIzaSyAGzPA5b5P1NofFZtbBvGpuYE3tVR-JaS0", authDomain: "pfdsuaaug.firebaseapp.com", projectId: "pfdsuaaug", storageBucket: "pfdsuaaug.firebasestorage.app", messagingSenderId: "701797222900", appId: "1:701797222900:web:01836d45db1b35be2bd1a1" },
+            app = initializeApp(fC),
+            db = getFirestore(app),
+            auth = getAuth(app),
+            gP = new GoogleAuthProvider,
+            gSI = document.getElementById('gsi'),
+            sO = document.getElementById('so'),
+            EN_ESPANOL_LINK = document.getElementById('en-espanol'),
+            CON_DOBLAJE_LINK = document.getElementById('con-doblaje'),
+            SDP1 = 'https://dl.dropbox.com/',
+            SDP2 = 'scl/fi/q5gd1j2lor3fbe6dtv15c/series.json?rlkey=vpgalrx1bbqhjy513q9qr9jvp&dl=1',
+            SDP3 = 'scl/fi/725dxvrb9i69xd4td620v/doblaje.json?rlkey=4elbmhb2ruq76jsi4ohfcp7we&dl=1',
+            A = document.getElementById('ap'),
+            MC = document.getElementById('mc'),
+            M = document.getElementById("sM"),
+            CBC = document.getElementById("cb"),
+            PB = document.getElementById('ppb'),
+            CS = document.getElementById('c'),
+            LC = document.getElementById('lasc'),
+            LS = document.getElementById('l'),
+            CI = document.getElementById('ci'),
+            TI = document.getElementById('ti'),
+            CWL = document.getElementById('cwl'),
+            TS = document.getElementById('t'),
+            SELECTOR_SERIES = document.getElementById('selector-series');
 
-        function obtenerCategoriasOrdenadas() {
-            var categoriasSet = new Set();
-            canales.forEach(function(canal) {
-                categoriasSet.add(canal.categoria);
-            });
-            return Array.from(categoriasSet).sort();
-        }
+        let TII,
+            IP = !1,
+            CSD = [],
+            CLI = 0,
+            CCI = 0,
+            CP = 0,
+            S,
+            SD = SDP1 + SDP2;
 
-        function updateChannelList() {
-            var selectedCategory = document.getElementById("categorySelector").value;
-            var channelSelector = document.getElementById("channelSelector");
-            channelSelector.innerHTML = "";
-            var filteredChannels = canales.filter(function(canal) {
-                return canal.categoria === selectedCategory;
-            });
-            filteredChannels.sort(function(a, b) {
-                return a.nombre.localeCompare(b.nombre);
-            });
-            filteredChannels.forEach(function(canal) {
-                var option = document.createElement("option");
-                option.text = canal.nombre;
-                option.value = JSON.stringify(canal);
-                channelSelector.add(option);
-            });
-            if (filteredChannels.length > 0) {
-                cargarStream();
-            }
-        }
-
-        function cargarStream() {
-            var selectBox = document.getElementById("channelSelector");
-            var selectedValue = JSON.parse(selectBox.value);
-            var config = {
-                playlist: [{
-                    title: "Audio del Stream Seleccionado",
-                    sources: [{
-                        file: selectedValue.url,
-                        type: "mpd"
-                    }],
-                    tracks: []  // Esto asegura que solo se utilicen pistas de audio.
-                }],
-                width: 0,
-                height: 0,
-                autostart: true,
-                audioOnly: true,
-                visualPlaylist: false, // Desactiva cualquier elemento visual relacionado con la lista de reproducción
-                controls: false
+        // Funciones de autenticación
+        const sWGi = async () => {
+                try {
+                    const r = await signInWithPopup(auth, gP),
+                        u = r.user;
+                    console.log("Usuario conectado con Google:", u.uid, u.displayName, u.email)
+                } catch (e) {
+                    console.error("Error al iniciar sesión con Google:", e)
+                }
+            },
+            sOG = async () => {
+                try {
+                    await signOut(auth);
+                    console.log("Usuario desconectado.")
+                } catch (e) {
+                    console.error("Error al cerrar sesión:", e)
+                }
             };
-            
-            if (selectedValue.keyId && selectedValue.key) {
-                config.drm = {
-                    clearkey: {
-                        keyId: selectedValue.keyId,
-                        key: selectedValue.key
+
+        // Observador de estado de autenticación
+        onAuthStateChanged(auth, u => {
+            u ? (console.log("Usuario conectado:", u.uid), gSI.classList.add('h'), sO.classList.remove('h'), UCW()) : (console.log("Usuario desconectado"), gSI.classList.remove('h'), sO.classList.add('h'), UCW())
+        });
+
+        gSI.addEventListener('click', sWGi);
+        sO.addEventListener('click', sOG);
+
+        // Funciones auxiliares
+        const FT = t => {
+                const m = Math.floor(t / 60),
+                    s = Math.floor(t % 60);
+                return `${PZ(m)}:${PZ(s)}`
+            },
+            PZ = n => (n < 10 ? '0' : '') + n,
+            GP = async n => {
+                if (!S) return;
+                const t = A.currentTime;
+                try {
+                    const u = auth.currentUser;
+                    if (!u) throw new Error("No hay usuario conectado.");
+                    const p = { serieNombre: S.nombre, capituloIndex: CCI, tiempo: t, idiomaIndex: CLI, userId: u.uid, ultimaActualizacion: serverTimestamp() };
+                    await setDoc(doc(db, "progresoSeries", `${u.uid}_${S.nombre}`), p);
+                    console.log("Progreso guardado en Firebase:", p);
+                    UCW()
+                } catch (e) {
+                    console.error("Error al guardar el progreso en Firebase:", e)
+                }
+            },
+            RP = async n => {
+                try {
+                    const u = auth.currentUser;
+                    if (!u) throw new Error("No hay usuario conectado.");
+                    const dS = await getDoc(doc(db, "progresoSeries", `${u.uid}_${n}`));
+                    if (dS.exists()) {
+                        const d = dS.data();
+                        CCI = d.capituloIndex;
+                        A.currentTime = d.tiempo;
+                        CLI = d.idiomaIndex || 0;
+                        CS.value = CCI;
+                        LS.value = CLI;
+                        UC();
+                        return !0
+                    } else {
+                        console.log("No se encontró el documento en Firebase.");
+                        return !1
                     }
-                };
-            }
-            
-            playerInstance = jwplayer("player").setup(config);
-        }
+                } catch (e) {
+                    console.error("Error al cargar el progreso de Firebase:", e);
+                    return !1
+                }
+            },
+            C = () => {
+                S && GP(S.nombre);
+                M.style.display = "none";
+                M.setAttribute("aria-hidden", "true");
+                A.pause();
+                A.src = '';
+                MC.classList.remove('h');
+                clearInterval(TII);
+                IP = !1;
+                PB.textContent = 'Reproducir';
+                CP = A.currentTime;
+                disableFocusTrap(M);
+                SELECTOR_SERIES.style.display = "block";
+            },
+            O = s => {
+                S = s;
+                IP = !1;
+                CLI = 0;
+                CCI = 0;
+                CSD = [];
+                LI(s);
+                LL(s);
+                LCF(s);
+                RP(s.nombre).then(() => {
+                    A.play()
+                });
+                MC.classList.add('h');
+                M.style.display = "block";
+                M.setAttribute("aria-hidden", "false");
+                document.querySelector('#sM .mc').focus();
+                enableFocusTrap(M);
+                SELECTOR_SERIES.style.display = "none";
+            },
+            FD = async () => {
+                try {
+                    const t = await fetch(SD);
+                    if (!t.ok) throw new Error(`Error! Status: ${t.status}`);
+                    const e = await t.json();
+                    return e.series
+                } catch (t) {
+                    return console.error('Error:', t), []
+                }
+            },
+            RCAS = s => {
+                const t = document.getElementById('coc');
+                t.innerHTML = "";
+                const sA = {};
+                s.forEach(s => {
+                    const nB = s.nombre.split(', temporada')[0].trim();
+                    sA[nB] || (sA[nB] = []);
+                    sA[nB].push(s)
+                });
+                const e = [...new Set(s.map(s => s.pais_origen))].sort();
+                e.forEach(p => {
+                    const n = document.createElement('h2');
+                    n.textContent = p;
+                    t.appendChild(n);
+                    const i = document.createElement('ul');
+                    i.classList.add('sl');
+                    Object.keys(sA).sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' })).forEach(nB => {
+                        const sD = sA[nB].filter(s => s.pais_origen === p);
+                        if (sD.length > 0) {
+                            const e = document.createElement('li'),
+                                n = document.createElement('button');
+                            n.textContent = nB;
+                            n.addEventListener('click', () => {
+                                const sO = [...sD].sort((a, b) => {
+                                        const tA = parseInt(a.nombre.split(', temporada ')[1]),
+                                            tB = parseInt(b.nombre.split(', temporada ')[1]);
+                                        return tA - tB
+                                    }),
+                                    pT = sO[0];
+                                O(pT);
+                                sO.length > 1 ? LT(sO) : document.getElementById('tasc').classList.add('h')
+                            });
+                            n.setAttribute('tabindex', '0');
+                            n.classList.add('b');
+                            e.appendChild(n);
+                            i.appendChild(e)
+                        }
+                    });
+                    t.appendChild(i)
+                });
+                UCW()
+            },
+            LT = s => {
+                TS.innerHTML = '';
+                document.getElementById('tasc').classList.remove('h');
+                s.sort((a, b) => {
+                    const tA = parseInt(a.nombre.split(', temporada ')[1]),
+                        tB = parseInt(b.nombre.split(', temporada ')[1]);
+                    return tA - tB
+                }).forEach(s => {
+                    const t = s.nombre.split(', temporada ')[1],
+                        o = document.createElement('option');
+                    o.value = s.nombre;
+                    o.textContent = `Temporada ${t}`;
+                    TS.appendChild(o)
+                });
+                TS.addEventListener('change', e => {
+                    const sS = s.find(s => s.nombre === e.target.value);
+                    sS && O(sS)
+                })
+            },
+            LI = s => {
+                const t = document.getElementById('si');
+                let repartoHTML = '';
 
-        function playPause() {
-            if (playerInstance.getState() === "playing") {
-                playerInstance.pause();
-            } else {
-                playerInstance.play();
-            }
-        }
-
-        function changeVolume(amount) {
-            var currentVolume = playerInstance.getVolume();
-            var newVolume = Math.max(0, Math.min(100, currentVolume + amount));
-            playerInstance.setVolume(newVolume);
-        }
-
-        function changeAudioTrack(offset) {
-            if (playerInstance) {
-                var currentAudioTrack = playerInstance.getCurrentAudioTrack();
-                var audioTracks = playerInstance.getAudioTracks();
-                var newTrackIndex = currentAudioTrack + offset;
-                
-                if (newTrackIndex < 0) {
-                    newTrackIndex = audioTracks.length - 1;
-                } else if (newTrackIndex >= audioTracks.length) {
-                    newTrackIndex = 0;
+                if (SD === SDP1 + SDP2) {
+                    repartoHTML = `<div><strong>Reparto:</strong> ${s.reparto.join(", ")}</div>`;
                 }
 
-                playerInstance.setCurrentAudioTrack(newTrackIndex);
+                S = s;
+                t.innerHTML = `<h2>${s.nombre}</h2><div><strong>Género:</strong> ${s.genero}</div><div><strong>Año:</strong> ${s.anio}</div>${repartoHTML}<div><strong>País:</strong> ${s.pais_origen}</div><div><strong>Episodios:</strong> ${s.cantidad_episodios}</div>${s.sinopsis ? `<div><strong>Sinopsis:</strong> ${s.sinopsis}</div>` : ''}`
+            },
+            LL = s => {
+                LS.innerHTML = '';
+                s.enlaces.length > 1 ? (s.enlaces.forEach((t, e) => {
+                    const n = document.createElement('option');
+                    n.value = e, n.textContent = t.idioma, LS.appendChild(n)
+                }), LC.classList.remove('h')) : LC.classList.add('h')
+            },
+            LCF = s => {
+                CS.innerHTML = '';
+                CSD = s.capitulos;
+                CSD.forEach((t, e) => {
+                    const n = document.createElement('option');
+                    n.value = e, n.textContent = t.titulo, CS.appendChild(n)
+                });
+                CS.value = CCI;
+                UC();
+                A.src = s.enlaces[CLI].enlace;
+                A.load();
+                A.currentTime = CP;
+                IP && A.play();
+                clearInterval(TII);
+                UT();
+                TII = setInterval(UT, 1e3)
+            },
+            UC = () => {
+                CI.textContent = IP ? `Reproduciendo: ${CSD[CCI].titulo}` : `${CSD[CCI].titulo}`
+            },
+            UT = () => {
+                const t = A.currentTime,
+                    e = GCI(t),
+                    n = CSD[e],
+                    i = n.inicio / 1e3,
+                    o = n.fin / 1e3,
+                    r = FT(t - i),
+                    c = FT(o - i);
+                CI.textContent = IP ? `Reproduciendo: ${CSD[CCI].titulo}` : `${CSD[CCI].titulo}`, TI.textContent = `${r} / ${c}`
+            },
+            TP = () => {
+                IP ? (A.pause(), IP = !1, PB.textContent = 'Reproducir', PB.setAttribute('aria-label', 'Reproducir')) : (A.play(), IP = !0, PB.textContent = 'Pausar', PB.setAttribute('aria-label', 'Pausar'))
+            },
+            F = () => {
+                A.currentTime += 15
+            },
+            B = () => {
+                A.currentTime -= 15
+            },
+            PC = () => {
+                CCI = parseInt(CS.value);
+                CSD[CCI] ? (A.currentTime = CSD[CCI].inicio / 1e3, A.play(), IP = !0, PB.textContent = 'Pausar', PB.setAttribute('aria-label', 'Pausar'), UC()) : console.warn("Capitulo?")
+            },
+            GCI = t => {
+                let e = 0;
+                return CSD.forEach((n, i) => {
+                    t >= n.inicio / 1e3 && t <= n.fin / 1e3 && (e = i)
+                }), e
+            },
+            PP = () => {
+                let t = CCI;
+                t > 0 && (t--, CS.value = t, PC())
+            },
+            NP = () => {
+                let t = CCI;
+                t < CSD.length - 1 && (t++, CS.value = t, PC())
+            },
+            CL = () => {
+                CP = A.currentTime;
+                CLI = parseInt(LS.value), LCF(S)
+            },
+            IV = () => {
+                A.volume = Math.min(1, A.volume + .05)
+            },
+            DV = () => {
+                A.volume = Math.max(0, A.volume - .05)
+            },
+            DCW = async s => {
+                try {
+                    const u = auth.currentUser;
+                    if (!u) throw new Error("No hay usuario conectado.");
+                    await deleteDoc(doc(db, "progresoSeries", `${u.uid}_${s}`));
+                    console.log("Serie eliminada de Continuar Viendo:", s);
+                    UCW()
+                } catch (e) {
+                    console.error("Error al eliminar la serie de Continuar Viendo:", e)
+                }
+            },
+            UCW = async () => {
+                CWL.innerHTML = '';
+                try {
+                    const u = auth.currentUser;
+                    if (!u) throw new Error("No hay usuario conectado.");
+                    const q = query(collection(db, "progresoSeries"), where("userId", "==", u.uid), where("tiempo", ">", 600)),
+                        qS = await getDocs(q),
+                        c = [];
+                    qS.forEach(d => {
+                        c.push({ ...d.data(), id: d.id })
+                    });
+                    const s = await FD();
+                    for (const t of c) {
+                        const ser = s.find(e => e.nombre === t.serieNombre);
+                        if (ser) {
+                            const cap = ser.capitulos[t.capituloIndex],
+                                ini = cap.inicio / 1e3,
+                                fin = cap.fin / 1e3,
+                                durR = FT(fin - t.tiempo),
+                                li = document.createElement('li'),
+                                btn = document.createElement('button');
+                            btn.textContent = `${ser.nombre}, ${cap.titulo}, ${durR}`;
+                            btn.addEventListener('click', () => {
+                                O(ser);
+                                S = ser;
+                                RP(ser.nombre)
+                            });
+                            btn.classList.add('b');
+                            li.appendChild(btn);
+                            const delB = document.createElement('button');
+                            delB.textContent = 'Eliminar';
+                            delB.classList.add('b');
+                            delB.addEventListener('click', () => DCW(t.serieNombre));
+                            li.appendChild(delB);
+                            CWL.appendChild(li)
+                        }
+                    }
+                } catch (e) {
+                    console.error("Error al actualizar Continuar Viendo:", e)
+                }
+            };
+
+        // Event Listeners
+        CBC.addEventListener('click', C);
+        window.addEventListener('click', t => {
+            t.target === M && C()
+        });
+        CS.addEventListener('change', () => {
+            S && GP(S.nombre), PC()
+        });
+        A.addEventListener('pause', () => {
+            S && GP(S.nombre)
+        });
+        A.addEventListener('play', () => {
+            IP = !0, PB.textContent = 'Pausar', PB.setAttribute('aria-label', 'Pausar')
+        });
+        LS.addEventListener('change', CL);
+        PB.addEventListener('click', TP);
+        document.getElementById('fb').addEventListener('click', F);
+        document.getElementById('bb').addEventListener('click', B);
+        document.getElementById('pcb').addEventListener('click', PP);
+        document.getElementById('ncb').addEventListener('click', NP);
+        document.getElementById('ivb').addEventListener('click', IV);
+        document.getElementById('dvb').addEventListener('click', DV);
+        EN_ESPANOL_LINK.addEventListener('click', (e) => {
+            e.preventDefault();
+            SD = SDP1 + SDP2;
+            cargarSeries();
+        });
+        CON_DOBLAJE_LINK.addEventListener('click', (e) => {
+            e.preventDefault();
+            SD = SDP1 + SDP3;
+            cargarSeries();
+        });
+
+        // Cargar series
+        const cargarSeries = () => {
+            FD().then(s => RCAS(s));
+        };
+
+        window.onload = () => {
+            cargarSeries();
+        };
+
+        setInterval(() => {
+            M.style.display === "block" && S && GP(S.nombre)
+        }, 5e3);
+
+        // Focus Trap
+        function createFocusTrap(element) {
+            let focusableElements = element.querySelectorAll('a[href], button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled])');
+            let firstFocusableElement = focusableElements[0];
+            let lastFocusableElement = focusableElements[focusableElements.length - 1];
+
+            const keydownHandler = (e) => {
+                const isTabPressed = e.key === 'Tab' || e.keyCode === 9;
+
+                if (!isTabPressed) {
+                    return;
+                }
+
+                if (e.shiftKey) {
+                    if (document.activeElement === firstFocusableElement) {
+                        lastFocusableElement.focus();
+                        e.preventDefault();
+                    }
+                } else {
+                    if (document.activeElement === lastFocusableElement) {
+                        firstFocusableElement.focus();
+                        e.preventDefault();
+                    }
+                }
+            };
+
+            element.addEventListener('keydown', keydownHandler);
+
+            return {
+                destroy: () => {
+                    element.removeEventListener('keydown', keydownHandler);
+                },
+                update: () => {
+                    focusableElements = element.querySelectorAll('a[href], button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled])');
+                    firstFocusableElement = focusableElements[0];
+                    lastFocusableElement = focusableElements[focusableElements.length - 1];
+                }
+            };
+        }
+
+        let currentFocusTrap = null;
+
+        function enableFocusTrap(element) {
+            if (currentFocusTrap) {
+                currentFocusTrap.destroy();
+            }
+            currentFocusTrap = createFocusTrap(element);
+        }
+
+        function disableFocusTrap(element) {
+            if (currentFocusTrap) {
+                currentFocusTrap.destroy();
+                currentFocusTrap = null;
             }
         }
     </script>
 </body>
+
 </html>
