@@ -5217,6 +5217,844 @@
                     "titulo": "Capítulo 66"
                 }
             ]
+        },
+        {
+            "nombre": "Avenida Brasil",
+            "genero": "Drama; Misterio",
+            "anio": 2012,
+            "reparto": [
+                "Débora Falabella",
+                "Adriana Esteves",
+                "Murilo Benício",
+                "Cauã Reymond",
+                "Marcello Novaes",
+                "Vera Holtz",
+                "José de Abreu",
+                "Eliane Giardini",
+                "Marcos Caruso",
+                "Heloísa Périssé",
+                "Letícia Isnard",
+                "Alexandre Borges",
+                "Débora Bloch",
+                "Camila Morgado",
+                "Carolina Ferraz",
+                "Nathalia Dill",
+                "Isis Valverde",
+                "Fabiula Nascimento",
+                "Juca de Oliveira",
+                "Aílton Graça"
+            ],
+            "pais_origen": "Brasil",
+            "cantidad_episodios": 160,
+            "sinopsis": "Esta es la dramática historia de Rita, que lucha por recuperar parte de la vida que su terrible madrastra, Carmina, le robó cuando todavía era solo una niña. Pero ella tendrá que enfrentarse a su pasado y decidir hasta dónde está dispuesta a llegar para vengarse de los que más le hicieron daño.",
+            "enlaces": [
+                {
+                    "idioma": "Español Latino",
+                    "enlace": "https://dn721906.ca.archive.org/0/items/serbraua/avenida-brasil.m4a"
+                }
+            ],
+            "capitulos": [
+                {
+                    "inicio": 0,
+                    "fin": 3217631,
+                    "titulo": "Capítulo 1: Scene 12"
+                },
+                {
+                    "inicio": 3217631,
+                    "fin": 6401686,
+                    "titulo": "Capítulo 2: Scene 12"
+                },
+                {
+                    "inicio": 6401686,
+                    "fin": 9551374,
+                    "titulo": "Capítulo 3: Scene 12"
+                },
+                {
+                    "inicio": 9551374,
+                    "fin": 12234554,
+                    "titulo": "Capítulo 4: Scene 10"
+                },
+                {
+                    "inicio": 12234554,
+                    "fin": 15021963,
+                    "titulo": "Capítulo 5: Scene 11"
+                },
+                {
+                    "inicio": 15021963,
+                    "fin": 17758488,
+                    "titulo": "Capítulo 6: Scene 10"
+                },
+                {
+                    "inicio": 17758488,
+                    "fin": 20657801,
+                    "titulo": "Capítulo 7: Scene 12"
+                },
+                {
+                    "inicio": 20657801,
+                    "fin": 23458098,
+                    "titulo": "Capítulo 8: Scene 10"
+                },
+                {
+                    "inicio": 23458098,
+                    "fin": 26430817,
+                    "titulo": "Capítulo 9"
+                },
+                {
+                    "inicio": 26430817,
+                    "fin": 29248173,
+                    "titulo": "Capítulo 10: Scene 11"
+                },
+                {
+                    "inicio": 29248173,
+                    "fin": 32199496,
+                    "titulo": "Capítulo 11: Scene 11"
+                },
+                {
+                    "inicio": 32199496,
+                    "fin": 34896690,
+                    "titulo": "Capítulo 12"
+                },
+                {
+                    "inicio": 34896690,
+                    "fin": 37732314,
+                    "titulo": "Capítulo 13: Scene 11"
+                },
+                {
+                    "inicio": 37732314,
+                    "fin": 40551380,
+                    "titulo": "Capítulo 14"
+                },
+                {
+                    "inicio": 40551380,
+                    "fin": 43455155,
+                    "titulo": "Capítulo 15: Scene 11"
+                },
+                {
+                    "inicio": 43455155,
+                    "fin": 46266046,
+                    "titulo": "Capítulo 16: Scene 10"
+                },
+                {
+                    "inicio": 46266046,
+                    "fin": 49256867,
+                    "titulo": "Capítulo 17: Scene 12"
+                },
+                {
+                    "inicio": 49256867,
+                    "fin": 52118809,
+                    "titulo": "Capítulo 18: Scene 11"
+                },
+                {
+                    "inicio": 52118809,
+                    "fin": 55074887,
+                    "titulo": "Capítulo 19: Scene 11"
+                },
+                {
+                    "inicio": 55074887,
+                    "fin": 58041350,
+                    "titulo": "Capítulo 20"
+                },
+                {
+                    "inicio": 58041350,
+                    "fin": 60958555,
+                    "titulo": "Capítulo 21"
+                },
+                {
+                    "inicio": 60958555,
+                    "fin": 63924601,
+                    "titulo": "Capítulo 22: Scene 11"
+                },
+                {
+                    "inicio": 63924601,
+                    "fin": 66919467,
+                    "titulo": "Capítulo 23"
+                },
+                {
+                    "inicio": 66919467,
+                    "fin": 69840676,
+                    "titulo": "Capítulo 24: Scene 12"
+                },
+                {
+                    "inicio": 69840676,
+                    "fin": 72769184,
+                    "titulo": "Capítulo 25: Scene 13"
+                },
+                {
+                    "inicio": 72769184,
+                    "fin": 75700445,
+                    "titulo": "Capítulo 26: Scene 11"
+                },
+                {
+                    "inicio": 75700445,
+                    "fin": 78737770,
+                    "titulo": "Capítulo 27: Scene 14"
+                },
+                {
+                    "inicio": 78737770,
+                    "fin": 81676080,
+                    "titulo": "Capítulo 28: Scene 14"
+                },
+                {
+                    "inicio": 81676080,
+                    "fin": 84420530,
+                    "titulo": "Capítulo 29: Scene 11"
+                },
+                {
+                    "inicio": 84420530,
+                    "fin": 87232756,
+                    "titulo": "Capítulo 30: Scene 12"
+                },
+                {
+                    "inicio": 87232756,
+                    "fin": 90139993,
+                    "titulo": "Capítulo 31: Scene 15"
+                },
+                {
+                    "inicio": 90139993,
+                    "fin": 93080388,
+                    "titulo": "Capítulo 32: Scene 11"
+                },
+                {
+                    "inicio": 93080388,
+                    "fin": 95997427,
+                    "titulo": "Capítulo 33"
+                },
+                {
+                    "inicio": 95997427,
+                    "fin": 98971940,
+                    "titulo": "Capítulo 34: Scene 11"
+                },
+                {
+                    "inicio": 98971940,
+                    "fin": 101895652,
+                    "titulo": "Capítulo 35: Scene 14"
+                },
+                {
+                    "inicio": 101895652,
+                    "fin": 104735572,
+                    "titulo": "Capítulo 36: Scene 12"
+                },
+                {
+                    "inicio": 104735572,
+                    "fin": 107514389,
+                    "titulo": "Capítulo 37: Scene 12"
+                },
+                {
+                    "inicio": 107514389,
+                    "fin": 110321860,
+                    "titulo": "Capítulo 38"
+                },
+                {
+                    "inicio": 110321860,
+                    "fin": 113155065,
+                    "titulo": "Capítulo 39"
+                },
+                {
+                    "inicio": 113155065,
+                    "fin": 116130662,
+                    "titulo": "Capítulo 40"
+                },
+                {
+                    "inicio": 116130662,
+                    "fin": 118921366,
+                    "titulo": "Capítulo 41"
+                },
+                {
+                    "inicio": 118921366,
+                    "fin": 121732132,
+                    "titulo": "Capítulo 42: Scene 12"
+                },
+                {
+                    "inicio": 121732132,
+                    "fin": 124569549,
+                    "titulo": "Capítulo 43: Scene 13"
+                },
+                {
+                    "inicio": 124569549,
+                    "fin": 127488131,
+                    "titulo": "Capítulo 44: Scene 11"
+                },
+                {
+                    "inicio": 127488131,
+                    "fin": 130365505,
+                    "titulo": "Capítulo 45"
+                },
+                {
+                    "inicio": 130365505,
+                    "fin": 132971983,
+                    "titulo": "Capítulo 46"
+                },
+                {
+                    "inicio": 132971983,
+                    "fin": 135814405,
+                    "titulo": "Capítulo 47: Scene 12"
+                },
+                {
+                    "inicio": 135814405,
+                    "fin": 138718472,
+                    "titulo": "Capítulo 48: Scene 13"
+                },
+                {
+                    "inicio": 138718472,
+                    "fin": 141612738,
+                    "titulo": "Capítulo 49: Scene 12"
+                },
+                {
+                    "inicio": 141612738,
+                    "fin": 144415788,
+                    "titulo": "Capítulo 50"
+                },
+                {
+                    "inicio": 144415788,
+                    "fin": 147173459,
+                    "titulo": "Capítulo 51"
+                },
+                {
+                    "inicio": 147173459,
+                    "fin": 150062470,
+                    "titulo": "Capítulo 52: Scene 13"
+                },
+                {
+                    "inicio": 150062470,
+                    "fin": 152928624,
+                    "titulo": "Capítulo 53: Scene 13"
+                },
+                {
+                    "inicio": 152928624,
+                    "fin": 155757283,
+                    "titulo": "Capítulo 54"
+                },
+                {
+                    "inicio": 155757283,
+                    "fin": 158417106,
+                    "titulo": "Capítulo 55: Scene 11"
+                },
+                {
+                    "inicio": 158417106,
+                    "fin": 161315960,
+                    "titulo": "Capítulo 56"
+                },
+                {
+                    "inicio": 161315960,
+                    "fin": 164195962,
+                    "titulo": "Capítulo 57: Scene 12"
+                },
+                {
+                    "inicio": 164195962,
+                    "fin": 167023620,
+                    "titulo": "Capítulo 58: Scene 13"
+                },
+                {
+                    "inicio": 167023620,
+                    "fin": 169920847,
+                    "titulo": "Capítulo 59: Scene 12"
+                },
+                {
+                    "inicio": 169920847,
+                    "fin": 172828710,
+                    "titulo": "Capítulo 60: Scene 10"
+                },
+                {
+                    "inicio": 172828710,
+                    "fin": 175733111,
+                    "titulo": "Capítulo 61: Scene 15"
+                },
+                {
+                    "inicio": 175733111,
+                    "fin": 178642559,
+                    "titulo": "Capítulo 62: Scene 13"
+                },
+                {
+                    "inicio": 178642559,
+                    "fin": 181516972,
+                    "titulo": "Capítulo 63: Scene 15"
+                },
+                {
+                    "inicio": 181516972,
+                    "fin": 184519304,
+                    "titulo": "Capítulo 64: Scene 14"
+                },
+                {
+                    "inicio": 184519304,
+                    "fin": 187431546,
+                    "titulo": "Capítulo 65"
+                },
+                {
+                    "inicio": 187431546,
+                    "fin": 190287774,
+                    "titulo": "Capítulo 66"
+                },
+                {
+                    "inicio": 190287774,
+                    "fin": 193123982,
+                    "titulo": "Capítulo 67: Scene 14"
+                },
+                {
+                    "inicio": 193123982,
+                    "fin": 195960982,
+                    "titulo": "Capítulo 68: Scene 15"
+                },
+                {
+                    "inicio": 195960982,
+                    "fin": 198829055,
+                    "titulo": "Capítulo 69: Scene 13"
+                },
+                {
+                    "inicio": 198829055,
+                    "fin": 201731371,
+                    "titulo": "Capítulo 70: Scene 12"
+                },
+                {
+                    "inicio": 201731371,
+                    "fin": 204598026,
+                    "titulo": "Capítulo 71"
+                },
+                {
+                    "inicio": 204598026,
+                    "fin": 207507390,
+                    "titulo": "Capítulo 72"
+                },
+                {
+                    "inicio": 207507390,
+                    "fin": 210411916,
+                    "titulo": "Capítulo 73: Scene 13"
+                },
+                {
+                    "inicio": 210411916,
+                    "fin": 213314899,
+                    "titulo": "Capítulo 74: Scene 15"
+                },
+                {
+                    "inicio": 213314899,
+                    "fin": 216158156,
+                    "titulo": "Capítulo 75"
+                },
+                {
+                    "inicio": 216158156,
+                    "fin": 219018096,
+                    "titulo": "Capítulo 76: Scene 14"
+                },
+                {
+                    "inicio": 219018096,
+                    "fin": 221919452,
+                    "titulo": "Capítulo 77: Scene 13"
+                },
+                {
+                    "inicio": 221919452,
+                    "fin": 224786149,
+                    "titulo": "Capítulo 78: Scene 13"
+                },
+                {
+                    "inicio": 224786149,
+                    "fin": 227686629,
+                    "titulo": "Capítulo 79: Scene 14"
+                },
+                {
+                    "inicio": 227686629,
+                    "fin": 230591280,
+                    "titulo": "Capítulo 80: Scene 16"
+                },
+                {
+                    "inicio": 230591280,
+                    "fin": 233514825,
+                    "titulo": "Capítulo 81: Scene 11"
+                },
+                {
+                    "inicio": 233514825,
+                    "fin": 236321045,
+                    "titulo": "Capítulo 82: Scene 12"
+                },
+                {
+                    "inicio": 236321045,
+                    "fin": 239293097,
+                    "titulo": "Capítulo 83: Scene 12"
+                },
+                {
+                    "inicio": 239293097,
+                    "fin": 242293928,
+                    "titulo": "Capítulo 84"
+                },
+                {
+                    "inicio": 242293928,
+                    "fin": 245143858,
+                    "titulo": "Capítulo 85: Scene 15"
+                },
+                {
+                    "inicio": 245143858,
+                    "fin": 247971683,
+                    "titulo": "Capítulo 86: Scene 15"
+                },
+                {
+                    "inicio": 247971683,
+                    "fin": 250836795,
+                    "titulo": "Capítulo 87: Scene 12"
+                },
+                {
+                    "inicio": 250836795,
+                    "fin": 253690062,
+                    "titulo": "Capítulo 88: Scene 10"
+                },
+                {
+                    "inicio": 253690062,
+                    "fin": 256646056,
+                    "titulo": "Capítulo 89"
+                },
+                {
+                    "inicio": 256646056,
+                    "fin": 259370569,
+                    "titulo": "Capítulo 90: Scene 11"
+                },
+                {
+                    "inicio": 259370569,
+                    "fin": 262122484,
+                    "titulo": "Capítulo 91: Scene 10"
+                },
+                {
+                    "inicio": 262122484,
+                    "fin": 264835611,
+                    "titulo": "Capítulo 92: Scene 10"
+                },
+                {
+                    "inicio": 264835611,
+                    "fin": 267718991,
+                    "titulo": "Capítulo 93: Scene 12"
+                },
+                {
+                    "inicio": 267718991,
+                    "fin": 270629815,
+                    "titulo": "Capítulo 94: Scene 13"
+                },
+                {
+                    "inicio": 270629815,
+                    "fin": 273525207,
+                    "titulo": "Capítulo 95: Scene 11"
+                },
+                {
+                    "inicio": 273525207,
+                    "fin": 276455592,
+                    "titulo": "Capítulo 96: Scene 10"
+                },
+                {
+                    "inicio": 276455592,
+                    "fin": 279351526,
+                    "titulo": "Capítulo 97: Scene 12"
+                },
+                {
+                    "inicio": 279351526,
+                    "fin": 282244666,
+                    "titulo": "Capítulo 98: Scene 11"
+                },
+                {
+                    "inicio": 282244666,
+                    "fin": 285131091,
+                    "titulo": "Capítulo 99: Scene 9"
+                },
+                {
+                    "inicio": 285131091,
+                    "fin": 287972763,
+                    "titulo": "Capítulo 100: Scene 12"
+                },
+                {
+                    "inicio": 287972763,
+                    "fin": 290788033,
+                    "titulo": "Capítulo 101: Scene 13"
+                },
+                {
+                    "inicio": 290788033,
+                    "fin": 293593126,
+                    "titulo": "Capítulo 102: Scene 11"
+                },
+                {
+                    "inicio": 293593126,
+                    "fin": 296571726,
+                    "titulo": "Capítulo 103: Scene 11"
+                },
+                {
+                    "inicio": 296571726,
+                    "fin": 299372065,
+                    "titulo": "Capítulo 104: Scene 11"
+                },
+                {
+                    "inicio": 299372065,
+                    "fin": 302203977,
+                    "titulo": "Capítulo 105: Scene 12"
+                },
+                {
+                    "inicio": 302203977,
+                    "fin": 305039768,
+                    "titulo": "Capítulo 106: Scene 11"
+                },
+                {
+                    "inicio": 305039768,
+                    "fin": 307962020,
+                    "titulo": "Capítulo 107: Scene 12"
+                },
+                {
+                    "inicio": 307962020,
+                    "fin": 310856244,
+                    "titulo": "Capítulo 108: Scene 9"
+                },
+                {
+                    "inicio": 310856244,
+                    "fin": 313578171,
+                    "titulo": "Capítulo 109: Scene 8"
+                },
+                {
+                    "inicio": 313578171,
+                    "fin": 316325999,
+                    "titulo": "Capítulo 110"
+                },
+                {
+                    "inicio": 316325999,
+                    "fin": 319202247,
+                    "titulo": "Capítulo 111"
+                },
+                {
+                    "inicio": 319202247,
+                    "fin": 321993952,
+                    "titulo": "Capítulo 112"
+                },
+                {
+                    "inicio": 321993952,
+                    "fin": 324896810,
+                    "titulo": "Capítulo 113: Scene 10"
+                },
+                {
+                    "inicio": 324896810,
+                    "fin": 327732309,
+                    "titulo": "Capítulo 114: Scene 3"
+                },
+                {
+                    "inicio": 327732309,
+                    "fin": 330491482,
+                    "titulo": "Capítulo 115: Scene 3"
+                },
+                {
+                    "inicio": 330491482,
+                    "fin": 333374737,
+                    "titulo": "Capítulo 116: Scene 3"
+                },
+                {
+                    "inicio": 333374737,
+                    "fin": 336146839,
+                    "titulo": "Capítulo 117: Scene 4"
+                },
+                {
+                    "inicio": 336146839,
+                    "fin": 339035766,
+                    "titulo": "Capítulo 118: Scene 7"
+                },
+                {
+                    "inicio": 339035766,
+                    "fin": 341825261,
+                    "titulo": "Capítulo 119: Scene 7"
+                },
+                {
+                    "inicio": 341825261,
+                    "fin": 344736669,
+                    "titulo": "Capítulo 120: Scene 6"
+                },
+                {
+                    "inicio": 344736669,
+                    "fin": 347513234,
+                    "titulo": "Capítulo 121: Scene 8"
+                },
+                {
+                    "inicio": 347513234,
+                    "fin": 350459802,
+                    "titulo": "Capítulo 122: Scene 7"
+                },
+                {
+                    "inicio": 350459802,
+                    "fin": 353387977,
+                    "titulo": "Capítulo 123: Scene 8"
+                },
+                {
+                    "inicio": 353387977,
+                    "fin": 356279073,
+                    "titulo": "Capítulo 124: Scene 9"
+                },
+                {
+                    "inicio": 356279073,
+                    "fin": 359177385,
+                    "titulo": "Capítulo 125: Scene 7"
+                },
+                {
+                    "inicio": 359177385,
+                    "fin": 362028816,
+                    "titulo": "Capítulo 126"
+                },
+                {
+                    "inicio": 362028816,
+                    "fin": 364985060,
+                    "titulo": "Capítulo 127: Scene 7"
+                },
+                {
+                    "inicio": 364985060,
+                    "fin": 367825314,
+                    "titulo": "Capítulo 128: Scene 6"
+                },
+                {
+                    "inicio": 367825314,
+                    "fin": 370682918,
+                    "titulo": "Capítulo 129"
+                },
+                {
+                    "inicio": 370682918,
+                    "fin": 373627067,
+                    "titulo": "Capítulo 130: Scene 7"
+                },
+                {
+                    "inicio": 373627067,
+                    "fin": 376524419,
+                    "titulo": "Capítulo 131"
+                },
+                {
+                    "inicio": 376524419,
+                    "fin": 379397414,
+                    "titulo": "Capítulo 132: Scene 6"
+                },
+                {
+                    "inicio": 379397414,
+                    "fin": 382307070,
+                    "titulo": "Capítulo 133: Scene 8"
+                },
+                {
+                    "inicio": 382307070,
+                    "fin": 385202337,
+                    "titulo": "Capítulo 134: Scene 7"
+                },
+                {
+                    "inicio": 385202337,
+                    "fin": 388103401,
+                    "titulo": "Capítulo 135: Scene 7"
+                },
+                {
+                    "inicio": 388103401,
+                    "fin": 390860321,
+                    "titulo": "Capítulo 136: Scene 7"
+                },
+                {
+                    "inicio": 390860321,
+                    "fin": 393642892,
+                    "titulo": "Capítulo 137"
+                },
+                {
+                    "inicio": 393642892,
+                    "fin": 396506461,
+                    "titulo": "Capítulo 138: Scene 6"
+                },
+                {
+                    "inicio": 396506461,
+                    "fin": 399474134,
+                    "titulo": "Capítulo 139: Scene 6"
+                },
+                {
+                    "inicio": 399474134,
+                    "fin": 402351466,
+                    "titulo": "Capítulo 140: Scene 8"
+                },
+                {
+                    "inicio": 402351466,
+                    "fin": 405288817,
+                    "titulo": "Capítulo 141"
+                },
+                {
+                    "inicio": 405288817,
+                    "fin": 408104796,
+                    "titulo": "Capítulo 142: Scene 7"
+                },
+                {
+                    "inicio": 408104796,
+                    "fin": 410926698,
+                    "titulo": "Capítulo 143: Scene 7"
+                },
+                {
+                    "inicio": 410926698,
+                    "fin": 413913348,
+                    "titulo": "Capítulo 144: Scene 6"
+                },
+                {
+                    "inicio": 413913348,
+                    "fin": 416938161,
+                    "titulo": "Capítulo 145: Scene 8"
+                },
+                {
+                    "inicio": 416938161,
+                    "fin": 419839559,
+                    "titulo": "Capítulo 146: Scene 6"
+                },
+                {
+                    "inicio": 419839559,
+                    "fin": 422718309,
+                    "titulo": "Capítulo 147: Scene 8"
+                },
+                {
+                    "inicio": 422718309,
+                    "fin": 425583171,
+                    "titulo": "Capítulo 148"
+                },
+                {
+                    "inicio": 425583171,
+                    "fin": 428459753,
+                    "titulo": "Capítulo 149: Scene 7"
+                },
+                {
+                    "inicio": 428459753,
+                    "fin": 431375082,
+                    "titulo": "Capítulo 150: Scene 7"
+                },
+                {
+                    "inicio": 431375082,
+                    "fin": 434271016,
+                    "titulo": "Capítulo 151: Scene 7"
+                },
+                {
+                    "inicio": 434271016,
+                    "fin": 437213789,
+                    "titulo": "Capítulo 152: Scene 6"
+                },
+                {
+                    "inicio": 437213789,
+                    "fin": 440135249,
+                    "titulo": "Capítulo 153: Scene 7"
+                },
+                {
+                    "inicio": 440135249,
+                    "fin": 443105132,
+                    "titulo": "Capítulo 154: Scene 7"
+                },
+                {
+                    "inicio": 443105132,
+                    "fin": 446040022,
+                    "titulo": "Capítulo 155: Scene 7"
+                },
+                {
+                    "inicio": 446040022,
+                    "fin": 448977122,
+                    "titulo": "Capítulo 156: Scene 6"
+                },
+                {
+                    "inicio": 448977122,
+                    "fin": 451940290,
+                    "titulo": "Capítulo 157: Scene 7"
+                },
+                {
+                    "inicio": 451940290,
+                    "fin": 454936616,
+                    "titulo": "Capítulo 158: Scene 6"
+                },
+                {
+                    "inicio": 454936616,
+                    "fin": 457975568,
+                    "titulo": "Capítulo 159: Scene 7"
+                },
+                {
+                    "inicio": 457975568,
+                    "fin": 461210466,
+                    "titulo": "Capítulo 160: Scene 5"
+                }
+            ]
         }
     ]
 }
